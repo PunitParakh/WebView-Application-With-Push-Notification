@@ -150,13 +150,13 @@ class _WebpageState extends State<Webpage> {
   var whatsapp ="+917385738599";
   var whatsappURl_android = "https://wa.me/$whatsapp?text=I'm%20interested";
 
-    if( await canLaunch(whatsappURl_android)){
+    // if( await canLaunch(whatsappURl_android)){
       await launch(whatsappURl_android);
-    }else{
-      ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: new Text("something went wrong")));
+    // }else{
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //       SnackBar(content: new Text("something went wrong")));
 
-    }
+    // }
 
 
   
